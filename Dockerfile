@@ -9,5 +9,5 @@ RUN mvn clean package
 FROM openjdk:8u201-jdk-alpine3.9
 LABEL maintainer="Masivian Group"
 WORKDIR WORKSPACE /Creditcard
-COPY --from=builder /Creditcard/target/chargrid-0.0.1-SNAPSHOT.jar .
-ENTRYPOINT java -Djava.net.preferIPv4Stack=true -jar chargrid-0.0.1-SNAPSHOT.jar
+COPY --from=builder /Creditcard/target/creditcard-0.0.1-SNAPSHOT.jar .
+ENTRYPOINT java -Djava.net.preferIPv4Stack=true -jar creditcard-0.0.1-SNAPSHOT.jar
