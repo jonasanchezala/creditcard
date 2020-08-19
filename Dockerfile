@@ -9,5 +9,5 @@ RUN mvn clean package
 FROM openjdk:8u201-jdk-alpine3.9
 LABEL maintainer="Masivian Group"
 WORKDIR WORKSPACE /Creditcard
-COPY --from=builder /Creditcard/target/spring-soap-1.0.0.jar .
-ENTRYPOINT java -Djava.net.preferIPv4Stack=true -jar spring-soap-1.0.0.jar
+COPY --from=builder /Creditcard/target/chargrid-0.0.1-SNAPSHOT.jar .
+ENTRYPOINT java -Djava.net.preferIPv4Stack=true -jar chargrid-0.0.1-SNAPSHOT.jar
