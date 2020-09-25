@@ -37,7 +37,6 @@ import javax.xml.bind.annotation.XmlType;
 })
 @XmlRootElement(name = "getCreditCardValidationResponse")
 public class GetCreditCardValidationResponse {
-
     @XmlElement(required = true)
     protected String issuingNetwork;
     @XmlElement(required = true)
