@@ -5,6 +5,11 @@ Wsdl Path:
 $ src/main/resources/creditcard.wsdl
 ```
 
+wsdl URL
+```sh
+http://localhost:8090/ws/creditcardvalidation.wsdl
+```
+
 Para correr el proyecto dockerizado:
 ```sh
 $ ./startup.sh
@@ -12,7 +17,7 @@ $ ./startup.sh
 
 Para eliminar el proyecto dockerizado:
 ```sh
-$ ./stop.sh
+$ ./shutdown.sh
 ```
 
 El siguiente gif es un ejemplo del mock en ejecucion:
